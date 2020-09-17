@@ -119,9 +119,9 @@ function TodoItem() {
          <div className="controlBox">
               <div className="count">{taskItems.length} item(s)</div>
               <div className="filter">
-                  <select name="category" id="category" onChange={(e) => handleFilterChange(e, "category")}>
+                  <select name="category" id="category" onChange={(e) => handleFilterChange(e, "category")} value={selected}>
                   {options.map(function(name, index){
-                        return <option value={name.value} selected={selected === name.value}>{name.text}</option>;
+                        return <option value={name.value} key={index} >{name.text}</option>;
                     })}
  
                     </select>
