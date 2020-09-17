@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.todo-container {
+ 
+  width: 80vw;
+  margin: 2em auto;
+  border-radius: 15px;
+  padding: 20px 10px;
+  color: #333;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tasks{
+  margin-top: 1em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task {
+  padding: 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+.taskState{
+  display: none;
+}
+.task:hover {
+  background-color: #dbe3e5;
+}
+.task:hover .taskState{
+  display:flex;
 }
 
-.App-link {
-  color: #61dafb;
+.task button{
+  background: transparent;
+  padding: 3px 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgba(122,122,122,1);
+  float: right;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: underline;
+}
+.controlBox{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+  color: #797a7e;
+}
+.taskActive{
+  display: flex;
+}
+.taskHide{
+  display: none;
+}
+.doneTime span{
+  margin-left: 1em;
+}
+#category{
+  margin-top: 1em;
+  font-size: 1.1em;
+  border: 1px #eee solid;
+  border-radius: 5px;
+  padding: .5em;
+  outline:none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+

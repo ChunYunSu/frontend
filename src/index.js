@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Header from './header';
 import App from './App';
+import TodoItems from './todoItem';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <Header topic="TODO" subtopic="A Simple todolist built react hooks & context" />
+    <TodoItems />
+  </>,
   document.getElementById('root')
 );
 
